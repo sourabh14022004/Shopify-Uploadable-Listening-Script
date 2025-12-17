@@ -399,7 +399,7 @@ def process_file(source_csv: str, template_csv: str, out_csv: str, fallback_pric
                 price_val = round_to_nearest_9_greater(cost_price)
             else:
                 price_val = ""
-            out["Price"] = price_val
+            out["Price"] = mrp_price
             out["Compare-at price"] = mrp_price
             out["Cost per item"] = cost_price
 
